@@ -5,7 +5,7 @@ authors = ["Isis Lovecruft <isis@patternsinthevoid.net>",
            "Henry de Valence <hdevalence@hdevalence.ca>"]
 readme = "README.md"
 license = "BSD-3-Clause"
-repository = "https://github.com/dalek-cryptography/curve25519-dalek"
+repository = "https://github.com/lemontreeran/curve25519-dalek"
 homepage = "https://dalek.rs/curve25519-dalek"
 documentation = "https://docs.rs/curve25519-dalek"
 categories = ["cryptography", "no-std"]
@@ -56,7 +56,8 @@ byteorder = { version = "1", default-features = false, features = ["i128"] }
 digest = "0.7"
 generic-array = "0.9"
 clear_on_drop = "=0.2.3"
-subtle = { version = "0.7", features = ["generic-impls"], default-features = false }
+# subtle = { version = "0.7", features = ["generic-impls"], default-features = false }
+subtle = { git = "https://github.com/dalek-cryptography/subtle", tag = "0.7.0" }
 serde = { version = "1.0", optional = true }
 packed_simd = { version = "0.1.0", features = ["into_bits"], optional = true }
 
