@@ -46,7 +46,8 @@ byteorder = { version = "1", default-features = false, features = ["i128"] }
 digest = "0.7"
 generic-array = "0.9"
 clear_on_drop = "=0.2.3"
-subtle = { version = "0.7", features = ["generic-impls"], default-features = false }
+# subtle = { version = "0.7", features = ["generic-impls"], default-features = false }
+subtle = { git = "https://github.com/lemontreeran/subtle", tag = "0.7.0" }
 serde = { version = "1.0", optional = true }
 packed_simd = { version = "0.1.0", features = ["into_bits"], optional = true }
 
